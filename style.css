@@ -38,6 +38,7 @@ body{
     --icon-color: white;
 }
 
+/* color mode */
 .light-theme{
 
     --bg-color: white;
@@ -46,7 +47,7 @@ body{
     --hover-color: aquamarine;
     --icon-color: black;
 }
-/* darkmode */
+
 
 /* navbar start */
 .bar{
@@ -86,9 +87,12 @@ nav ul li a{
 
 nav ul li i{
     color: var(--icon-color);
+    size: 20px;
+    cursor: pointer;
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li i:hover{
     color: var(--hover-color);
     transition: .4s;
     text-decoration: none;

@@ -28,7 +28,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contacts</a></li>
-                <li><i class="fa-solid fa-moon" id="icon"></i></li>
+                <li><i class="fa-solid fa-sun  fa-2xl" id="icon"></i></li>
             </ul>
         </nav>
     </div>
@@ -128,11 +128,21 @@
     <!-- script -->
     <script>
         var icon = document.getElementById("icon");
+        // icon.classList.toggle('fa-solid fa-moon');
+        // icon.classList.toggle('fa-solid fa-sun');
 
         icon.onclick = function(){
             document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme")){
+                // icon.classList.toggle("fa-solid fa-moon");
+                icon.className = "fa-solid fa-moon  fa-2xl";
+            }else{
+                // icon.classList.toggle("fa-solid fa-sun");
+                icon.className = "fa-solid fa-sun  fa-2xl";
+            }
         }
-    
+
+        
     </script>
     
 </body>
