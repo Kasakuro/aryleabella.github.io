@@ -28,7 +28,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contacts</a></li>
-                <li><button onclick="darkMode()">Switch</button></li>
+                <li><i class="fa-solid fa-moon" id="icon"></i></li>
             </ul>
         </nav>
     </div>
@@ -125,11 +125,15 @@
         </div>
     </section>
 
+    <!-- script -->
     <script>
-        function darkMode() {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
         }
-      </script>
+    
+    </script>
+    
 </body>
 </html>

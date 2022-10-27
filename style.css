@@ -18,7 +18,7 @@ html::-webkit-scrollbar-track{
 }
 
 body{
-    background-color: black !important;
+    background-color: var(--bg-color) !important;
     overflow: overlay;
 }
 
@@ -29,11 +29,30 @@ body{
     box-sizing: border-box;
 }
 
+:root{
+
+    --bg-color: black;
+    --font-color: white;
+    --bg-image: url(image/bg_night.jpg);
+    --hover-color: aquamarine;
+    --icon-color: white;
+}
+
+.light-theme{
+
+    --bg-color: white;
+    --font-color: black;
+    --bg-image: url(image/bg_day.jpg);
+    --hover-color: aquamarine;
+    --icon-color: black;
+}
+/* darkmode */
+
 /* navbar start */
 .bar{
     height: 100vh;
     width: 100%;
-    background-image: url(image/bg_night.jpg);
+    background-image: var(--bg-image);
     background-size: cover;
   
 }
@@ -58,15 +77,19 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color:var(--font-color);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
     font-size: 18px;
 }
 
+nav ul li i{
+    color: var(--icon-color);
+}
+
 nav ul li a:hover{
-    color: aquamarine;
+    color: var(--hover-color);
     transition: .4s;
     text-decoration: none;
 }
@@ -81,19 +104,19 @@ nav ul li a:hover{
 }
 
 .content h1{
-    color: white;
+    color: var(--font-color);
     margin: 20px 0px 20px;
     font-size: 90px;
 }
 
 .content h3{
-    color: white;
+    color: var(--font-color);
     margin-bottom: 50px;
     font-size: 35px;
 }
 
 .content h4{
-    color: white;
+    color: var(--font-color);
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -103,7 +126,7 @@ nav ul li a:hover{
 .about{
     width: 100%;
     padding: 100px 0px;
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -121,21 +144,21 @@ nav ul li a:hover{
 }
 
 .about-text h2{
-    color: white;
+    color: var(--font-color);
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
 .about-text h5 {
-    color: white;
+    color: var(--font-color);
     font-size: 40px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
 
 .about-text p{
-    color: white;
+    color: var(--font-color);
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
@@ -146,7 +169,7 @@ nav ul li a:hover{
 .projects{
     width: 100%;
     padding: 100px 0px;
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -157,7 +180,7 @@ nav ul li a:hover{
 }
 
 .projects h2{
-    color: white;
+    color: var(--font-color);
     text-align: center;
     font-size: 75px;
     padding: 5px;
@@ -177,21 +200,21 @@ nav ul li a:hover{
 
 .projects .column .col-img img{
     outline: none;
-    border-color: aquamarine;
-    box-shadow: 0 0 20px aquamarine;
+    border-color: var(--hover-color);
+    box-shadow: 0 0 20px var(--hover-color);
     width: 100%;
     border-radius: 10px;
 }
 
 .projects .column .col-title h3{
-    color: white;
+    color: var(--font-color);
     font-size:50px;
     padding: 5px;
     
 }
 
 .projects .column .col-description p{
-    color: white;
+    color: var(--font-color);
     font-size: 18px;
     padding: 5px 20px 0px 20px;
     margin-bottom: 10px;
@@ -207,7 +230,7 @@ nav ul li a:hover{
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--font-color);
     cursor: pointer;
     display: inline-flex;
     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -251,7 +274,7 @@ nav ul li a:hover{
 .contact{
     width: 100%;
     padding: 100px 0px;
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -264,7 +287,7 @@ nav ul li a:hover{
 
 .contact .con-title h3{
     width: 100%;
-    color: white;
+    color: var(--font-color);
     font-size: 70px;
     padding: 5px;
     margin-bottom: 50px;
@@ -287,16 +310,16 @@ nav ul li a:hover{
 
 .contact .column a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
     font-size: 50px;
     padding: 20px;
     border-radius: 5px;
 }
 
 .contact .column a:hover {
-    color: black;
+    color: var(--bg-color);
     transition: .4s;
-    background-color: white;
+    background-color: var(--font-color);
     font-weight: bold;
 }
 
@@ -307,14 +330,14 @@ nav ul li a:hover{
 .footer  {
     width: 100%;
     /* padding: 30px 0px; */
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .footer p {
-    color: white;
+    color: var(--font-color);
 }
 
 /* footer end */
@@ -324,7 +347,7 @@ nav ul li a:hover{
 hr{
     text-align: center;
     width: 50%;
-    background-color: white;
+    background-color: var(--font-color);
     height: 5px;
     border: none;
     margin: auto;
