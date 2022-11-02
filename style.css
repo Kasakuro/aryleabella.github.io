@@ -30,7 +30,6 @@ body{
 }
 
 :root{
-
     --bg-color: black;
     --font-color: white;
     --bg-image: url(image/bg_night.jpg);
@@ -40,7 +39,6 @@ body{
 
 /* color mode */
 .light-theme{
-
     --bg-color: white;
     --font-color: black;
     --bg-image: url(image/bg_day.jpg);
@@ -48,33 +46,33 @@ body{
     --icon-color: black;
 }
 
-
 /* navbar start */
 .bar{
     height: 100vh;
     width: 100%;
     background-image: var(--bg-image);
     background-size: cover;
-  
 }
 
 nav{
     display: flex;
     /* justify-content: right; */
-    padding-top: 45px;
+    padding-top: 20px;
     padding-right: 150px;
     text-align: right;
     align-content: right;
     position: fixed;
     top: 0;
     width: 100%;
-    
+    backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
 nav ul li{
     list-style-type: none;
     display: inline-block;
     padding:10px 35px ;
+    
 }
 
 nav ul li a{
@@ -325,6 +323,7 @@ nav ul li i:hover{
     transition: .4s;
     background-color: var(--font-color);
     font-weight: bold;
+    transition: .5s;
 }
 
 /* contact end */
