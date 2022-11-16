@@ -57,6 +57,7 @@ body{
     width: 100%;
     background-image: var(--bg-image);
     background-size: cover;
+    
 }
 
 nav{
@@ -142,14 +143,16 @@ nav ul li i:hover{
 }
 
 .about .main{
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     align-content: center;
+    text-align: center;
 }
 
 .about-text{
-    width: 550px;
+    width: 50%;
     text-align: center;
+    margin: auto;
 }
 
 .about-text h2{
@@ -168,9 +171,9 @@ nav ul li i:hover{
 
 .about-text p{
     color: var(--font-color);
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 50px;
 }
 /* About end */
 
@@ -185,7 +188,7 @@ nav ul li i:hover{
 }
 
 .projects .main{
-    width: 70%;
+    width: 60%;
 }
 
 .projects h2{
@@ -198,12 +201,12 @@ nav ul li i:hover{
 
 .projects .row {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .projects .column{
     flex: 50%;
-    padding: 5px;
+    padding: 15px;
     width: auto;
 }
 
